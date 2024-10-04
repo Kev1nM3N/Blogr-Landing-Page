@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif, Arial;
+}
+
+:root {
+  --light-red: hsl(356, 100%, 66%);
+  --very-light-red:  hsl(355, 100%, 74%);
+  --other-red: hsl(13, 100%, 72%);
+  --other-light-red: hsl(353, 100%, 62%);
+  --dark-blue: hsl(208, 49%, 24%);
+  --white-color: hsl(0, 0%, 100%);
+  --grayish-blue: hsl(240, 2%, 79%);
+  --dark-grey-blue: hsl(237, 17%, 21%);
+  --desaturated-blue: hsl(237, 23%, 32%);
+  --para-textFontSize: 16px;
+}
+
+#welcomeBanner {
+  min-height: 75vh;
+  outline: 2px solid blue;
+  background-image: linear-gradient(270deg, var(--very-light-red), var(--light-red));
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.background__img {
+  width: 500px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 100px;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__links {
+  display: flex;
+  margin: 0 24px;
+}
+
+.nav__link {
+  margin: 0 16px;
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: 600;
+  margin-right: 24px;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.right-nav a {
+  margin: 0 18px;
+}
+
+.white-button {
+  background-color: var(--white-color);
+  color: var(--light-red);
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 99px;
+  transition: all 200ms;
+}
+
+.white-button:hover {
+  background-color: var(--very-light-red);
+  color: var(--white-color);
+}
+
+header {
+  text-align: center;
+  margin: auto;
+  padding: 32px 0;
+}
+
+.header__container {
+  padding: 0 32px;
+}
+
+header h1 {
+  font-size: 56px;
+}
+
+header p {
+  font-size: var(--para-textFontSize);
+  font-weight: 200;
+  margin-top: 6px;
+}
+
+.header__buttons {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.header__buttons .white-button {
+  margin-right: 14px;
+}
+
+.clear__button {
+  padding: 10px 22px;
+  border-radius: 99px;
+  outline: 1px solid var(--white-color);
+  transition: all 200ms;
+}
+
+.clear__button:hover {
+  background-color: var(--white-color);
+  color: var(--light-red);
+  font-weight: 600;
+}
