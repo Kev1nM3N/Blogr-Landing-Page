@@ -23,17 +23,21 @@
 #welcomeBanner {
   min-height: 75vh;
   outline: 2px solid blue;
-  background-image: linear-gradient(270deg, var(--very-light-red), var(--light-red));
+  background-image: linear-gradient(270deg, var(--other-light-red), var(--other-red));
   color: var(--white-color);
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
 }
 
 .background__img {
-  width: 500px;
   position: absolute;
-  right: 0;
-  top: 0;
+  left: 0;
+  max-width: 1832px;
+  z-index: -1;
+  transform: translateY(-620px) rotate(10deg) scale(1.8) translateX(200px);
 }
 
 nav {
@@ -54,7 +58,27 @@ nav {
 }
 
 .nav__link {
-  margin: 0 16px;
+  /* margin: 0 16px; */
+  cursor: pointer;
+}
+
+.nav__link--container {
+  display: flex;
+}
+
+.nav__link--container:hover {
+  text-decoration: underline;
+}
+
+.nav__link--container:hover .link__arrow {
+  scale: -0.3;
+  width: 32px;
+}
+
+.link__arrow {
+  width: 32px;
+  scale: 0.3;
+  margin-right: 22px;
 }
 
 .logo {
