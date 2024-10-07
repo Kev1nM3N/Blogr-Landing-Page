@@ -15,6 +15,7 @@
   --dark-blue: hsl(208, 49%, 24%);
   --white-color: hsl(0, 0%, 100%);
   --grayish-blue: hsl(240, 2%, 79%);
+  --my-gray: rgb(229, 225, 225);
   --dark-grey-blue: hsl(237, 17%, 21%);
   --desaturated-blue: hsl(237, 23%, 32%);
   --para-textFontSize: 16px;
@@ -24,7 +25,7 @@
   min-height: 75vh;
   outline: 2px solid blue;
   background-image: linear-gradient(270deg, var(--other-light-red), var(--other-red));
-  color: var(--white-color);
+  color: var(--my-gray);
   display: flex;
   flex-direction: column;
   position: relative;
@@ -85,6 +86,7 @@ nav {
   font-size: 48px;
   font-weight: 600;
   margin-right: 24px;
+  color: var(--white-color);
 }
 
 .right-nav {
@@ -94,6 +96,10 @@ nav {
 
 .right-nav a {
   margin: 0 18px;
+}
+
+.right-nav a:hover {
+  text-decoration: underline;
 }
 
 .white-button {
@@ -122,6 +128,7 @@ header {
 
 header h1 {
   font-size: 56px;
+  color: var(--white-color);
 }
 
 header p {
@@ -145,6 +152,7 @@ header p {
   border-radius: 99px;
   outline: 1px solid var(--white-color);
   transition: all 200ms;
+  color: var(--white-color);
 }
 
 .clear__button:hover {
