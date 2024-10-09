@@ -23,7 +23,6 @@
 
 #welcomeBanner {
   min-height: 75vh;
-  outline: 2px solid blue;
   background-image: linear-gradient(270deg, var(--other-light-red), var(--other-red));
   color: var(--my-gray);
   display: flex;
@@ -31,6 +30,7 @@
   position: relative;
   z-index: 3;
   overflow: hidden;
+  border-bottom-left-radius: 15%;
 }
 
 .background__img {
@@ -45,7 +45,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 48px 100px;
+  padding: 48px 100px 0 100px;
 }
 
 .left-nav {
@@ -59,12 +59,52 @@ nav {
 }
 
 .nav__link {
-  /* margin: 0 16px; */
   cursor: pointer;
 }
 
 .nav__link--container {
   display: flex;
+}
+
+.nav__links .nav__link--container:last-child {
+  position: relative;
+}
+
+#dropDownMenu {
+  background-color: var(--white-color);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 170px;
+  height: 160px;
+  border-radius: 9px;
+  display: none;
+}
+
+.dropDownContainer {
+  height: 100%;
+}
+
+.dropDownList {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 20px;
+}
+
+.dropDownListItem {
+  color: #333;
+  cursor: pointer;
+}
+
+.dropDownListItem:hover {
+  color: black;
+  font-weight: 700;
+}
+
+.nav__link--container:hover #dropDownMenu {
+  display: block;
 }
 
 .nav__link--container:hover {
@@ -85,7 +125,7 @@ nav {
 .logo {
   font-size: 48px;
   font-weight: 600;
-  margin-right: 24px;
+  margin-right: 32px;
   color: var(--white-color);
 }
 
@@ -118,8 +158,7 @@ nav {
 
 header {
   text-align: center;
-  margin: auto;
-  padding: 32px 0;
+  padding: 75px 0;
 }
 
 .header__container {
@@ -159,4 +198,60 @@ header p {
   background-color: var(--white-color);
   color: var(--light-red);
   font-weight: 600;
+}
+
+/*
+
+THIS IS THE MAIN 
+    ||||||
+    vvvvvv
+
+*/
+
+main {
+  outline: 2px solid;
+}
+
+#landingPage {
+  outline: 2px solid red;
+  height: 100vh;
+  padding: 32px 18px;
+}
+
+.landingPage__container {
+  display: flex;
+}
+
+.left-box {
+  width: 50%;
+  height: auto;
+}
+
+.text__container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.right-box {
+  width: 50%;
+}
+
+.pageTitle {
+  color: var(--dark-blue);
+  font-size: 34px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.main__sub-heading {
+  color: var(--dark-blue);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.main__para {
+  font-weight: 300;
 }
