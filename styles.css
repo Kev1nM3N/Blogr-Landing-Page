@@ -21,6 +21,11 @@
   --para-textFontSize: 16px;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 #welcomeBanner {
   min-height: 75vh;
   background-image: linear-gradient(270deg, var(--other-light-red), var(--other-red));
@@ -215,11 +220,16 @@ main {
 #landingPage {
   outline: 2px solid red;
   height: 100vh;
-  padding: 32px 18px;
+  padding: 7rem 0 7rem 6rem;
 }
 
 .landingPage__container {
   display: flex;
+  height: 93%;
+}
+
+.topText, .bottomText {
+  width: 500px;
 }
 
 .left-box {
@@ -236,12 +246,22 @@ main {
 
 .right-box {
   width: 50%;
+  height: auto;
+  position: relative;
+}
+
+.illustration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  scale: 1.2;
+  transform: translateX(147px);
 }
 
 .pageTitle {
   color: var(--dark-blue);
   font-size: 34px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
 }
 
