@@ -220,7 +220,7 @@ main {
 #landingPage {
   outline: 2px solid red;
   height: 100vh;
-  padding: 7rem 0 7rem 6rem;
+  padding: 9rem 0 5rem 11rem;
 }
 
 .landingPage__container {
@@ -233,7 +233,7 @@ main {
 }
 
 .left-box {
-  width: 50%;
+  width: 40%;
   height: auto;
 }
 
@@ -245,17 +245,16 @@ main {
 }
 
 .right-box {
-  width: 50%;
+  width: 60%;
   height: auto;
   position: relative;
 }
 
 .illustration {
   position: absolute;
-  top: 0;
-  right: 0;
-  scale: 1.2;
-  transform: translateX(147px);
+  bottom: -74px;
+  left: 190px;
+  scale: 1.14;
 }
 
 .pageTitle {
