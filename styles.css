@@ -332,3 +332,80 @@ THIS IS THE BLOGR BANNER
 .blogr__container .main__para {
   font-weight: 200;
 }
+
+/*
+
+THIS IS THE ENDPAGE SECTION
+    ||||||
+    vvvvvv
+
+*/
+
+#endPage {
+  height: 100vh;
+}
+
+.endPage__container {
+  padding: 10rem 4rem 10rem 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.holderBox {
+  display: flex;
+}
+
+.img__container {
+  height: 100%;
+}
+
+.holderBox .right-box {
+  width: 50%;
+  position: relative;
+}
+
+.holderBox .left-box {
+  width: 50%;
+}
+
+.laptopImg {
+  position: relative;
+  top: 0;
+  scale: 1.5;
+  left: -180px;
+}
+
+/*
+
+THIS IS THE FOOTER
+    ||||||
+    vvvvvv
+
+*/
+
+footer {
+  background-color: var(--dark-grey-blue);
+  padding: 8% 0;
+  border-top-right-radius: 78px;
+}
+
+.footer__title {
+  color: var(--white-color);
+}
+
+.footer__anchor {
+  color: var(--my-gray);
+  font-weight: 200;
+}
+
+.footer__container {
+}
+
+.footer__row {
+  display: flex;
+}
+
+.footer__row .footer__column .logo {
+  transform: translateY(-20px);
+}
