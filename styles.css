@@ -207,18 +207,15 @@ header p {
 
 /*
 
-THIS IS THE MAIN 
+THIS IS THE LANDING PAGE 
     ||||||
     vvvvvv
 
 */
 
-main {
-  outline: 2px solid;
-}
+
 
 #landingPage {
-  outline: 2px solid red;
   height: 100vh;
   padding: 9rem 0 5rem 11rem;
 }
@@ -273,4 +270,65 @@ main {
 
 .main__para {
   font-weight: 300;
+}
+
+/*
+
+THIS IS THE BLOGR BANNER 
+    ||||||
+    vvvvvv
+
+*/
+
+#blogrBanner {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  background-color: var(--desaturated-blue);
+  border-bottom-left-radius: 75px;
+  border-top-right-radius: 99px;
+  height: 400px;
+}
+
+.blogr__container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.blogr-leftSide {
+  height: 100%;
+  overflow: hidden;
+}
+
+.circlePattern {
+  filter: invert(0.1);
+  min-width: 600px;
+  transform: translate(-113px, -400px);
+  scale: 1.1;
+}
+
+.phoneIllustration {
+  position: absolute;
+  left: 75px;
+  top: -75px;
+}
+
+.blogr-rightSide {
+  width: 50%;
+  transform: translateX(-135px);
+}
+
+.blogr-rightSide .text__container {
+  display: block;
+  max-width: 500px;
+}
+
+.blogr__container .pageTitle, .blogr__container .main__para {
+  color: var(--white-color);
+  text-align: left;
+}
+
+.blogr__container .main__para {
+  font-weight: 200;
 }
