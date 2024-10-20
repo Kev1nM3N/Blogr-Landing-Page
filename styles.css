@@ -112,7 +112,7 @@ nav {
   display: block;
 }
 
-.nav__link--container:hover {
+.nav__link--container:hover, .footer__anchor:hover {
   text-decoration: underline;
 }
 
@@ -137,6 +137,10 @@ nav {
 .right-nav {
   display: flex;
   align-items: center;
+}
+
+.mobileButton {
+  display: none;
 }
 
 .right-nav a {
@@ -217,16 +221,13 @@ THIS IS THE LANDING PAGE
 
 #landingPage {
   height: 100vh;
-  padding: 9rem 0 5rem 11rem;
+  padding: 9rem 0 5rem 7rem;
+  margin-top: 1rem;
 }
 
 .landingPage__container {
   display: flex;
   height: 93%;
-}
-
-.topText, .bottomText {
-  width: 500px;
 }
 
 .left-box {
@@ -249,7 +250,7 @@ THIS IS THE LANDING PAGE
 
 .illustration {
   position: absolute;
-  bottom: -74px;
+  bottom: -116px;
   left: 190px;
   scale: 1.14;
 }
@@ -281,8 +282,8 @@ THIS IS THE BLOGR BANNER
 */
 
 #blogrBanner {
-  margin-top: 80px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 70px;
   background-color: var(--desaturated-blue);
   border-bottom-left-radius: 75px;
   border-top-right-radius: 99px;
@@ -388,6 +389,7 @@ footer {
   background-color: var(--dark-grey-blue);
   padding: 8% 0;
   border-top-right-radius: 78px;
+  margin-top: 3rem;
 }
 
 .footer__title {
@@ -399,13 +401,59 @@ footer {
   font-weight: 200;
 }
 
-.footer__container {
-}
-
 .footer__row {
   display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.footer__title {
+  margin-bottom: 1.5rem;
+}
+
+.footer__link {
+  padding-bottom: 4px;
 }
 
 .footer__row .footer__column .logo {
   transform: translateY(-20px);
+}
+
+@media (max-width: 1280px) {
+  .illustration {
+    bottom: -110px;
+  }
+}
+
+@media (max-width: 990px) {
+
+  .left-nav .nav__links {
+    display: none;
+  }
+
+  .right-nav a, .right-nav .white-button {
+    display: none;
+  }
+
+  .right-nav .mobileButton {
+    display: block;
+    cursor: pointer;
+    transition: all 100ms;
+  }
+
+  .mobileButton:hover {
+    filter: opacity(25%);
+  }
+}
+
+@media (max-width: 700px) {
+  .header__container h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 606px) {
+  .header__container {
+    padding: 0 44px;
+  }
 }
