@@ -302,8 +302,8 @@ THIS IS THE BLOGR BANNER
 
 .circlePattern {
   filter: invert(0.1);
-  width: 620px;
-  transform: translate(-96px, -210px);
+  max-width: 620px;
+  transform: translate(-35px, -210px);
   scale: 1.1;
 }
 
@@ -375,8 +375,8 @@ THIS IS THE ENDPAGE SECTION
 .laptopImg {
   position: relative;
   top: 0;
-  scale: 1.5;
-  left: -180px;
+  scale: 1.2;
+  left: -200px;
 }
 
 /*
@@ -391,7 +391,7 @@ footer {
   background-color: var(--dark-grey-blue);
   padding: 8% 0;
   border-top-right-radius: 78px;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .footer__title {
@@ -461,9 +461,13 @@ ALL MOBILE AND TABLET DEVICES
 }
 
 @media (max-width: 990px) {
+
+  #blogrBanner {
+    margin-bottom: 0;
+  }
+
   .circlePattern {
-    transform: translate(-96px, -135px);
-    scale: 1.4;
+    transform: translate(-96px, -210px);
   }
 
   .phoneIllustration {
@@ -487,6 +491,14 @@ ALL MOBILE AND TABLET DEVICES
 
   .mobileButton:hover {
     filter: opacity(25%);
+  }
+
+  .endPage__container {
+    padding: 0 4rem 0 0;
+  }
+
+  .laptopImg {
+    left: -100px;
   }
 }
 
@@ -519,6 +531,10 @@ ALL MOBILE AND TABLET DEVICES
   .phoneIllustration {
     left: 35px;
   }
+
+  .laptopImg {
+    top: 50px;
+  }
 }
 
 @media (max-width: 796px) {
@@ -528,7 +544,7 @@ ALL MOBILE AND TABLET DEVICES
   }
 
   .circlePattern {
-    transform: translate(-78px, -70px);
+    transform: translate(-78px, -180px);
   }
 
   .phoneIllustration {
@@ -561,7 +577,7 @@ ALL MOBILE AND TABLET DEVICES
   .left-box .text__container {
     max-width: 500px;
     text-align: center;
-    padding: 0 24px;
+    padding: 0 42px;
   }
 
   .right-box {
@@ -576,29 +592,110 @@ ALL MOBILE AND TABLET DEVICES
 
   #blogrBanner {
     height: initial;
+    margin-top: 12rem;
+    margin-bottom: 10rem;
+  }
+
+  .blogr-leftSide {
+    width: 100%;
   }
 
   .circlePattern {
-    scale: 1;
-    max-width: 400px;
+    max-width: 300px;
+    transform: translate(0, -60px);
+    margin: 0 auto;
+    scale: 1.7;
   }
 
+  .phoneIllustration {
+    left: 120px;
+    top: -200px;
+  }
+  
   .blogr__container {
     flex-direction: column;
   }
-
+  
   .blogr-rightSide {
+    width: 60%;
+  }
+  
+  .blogr-rightSide .text__container {
+    text-align: center;
+    transform: translate(0, -80px);
+  }
+
+  .blogr__container .pageTitle, .blogr__container .main__para {
+    text-align: inherit;
+  }
+
+  #endPage {
+    height: initial;
+  }
+
+  .endPage__container {
+    padding: 0;
+  }
+
+  .holderBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .holderBox .left-box {
     width: initial;
+  }
+
+  .laptopImg {
+    top: 0;
+    left: 0;
+    scale: 1.5;
+  }
+
+  footer {
+    padding: 16% 0;
+  }
+
+  .footer__row {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__row .footer__column .logo{
+    margin-right: 0;
+  }
+
+  .footer__column {
+    margin-bottom: 3rem;
   }
 }
 
 @media (max-width: 606px) {
+  .phoneIllustration {
+    left: 110px;
+    top: -150px;
+    max-width: 350px;
+  }
+
   .header__container {
     padding: 0 44px;
   }
 }
 
+@media (max-width: 546px) {
+  .phoneIllustration {
+    left: 90px;
+  }
+}
+
 @media (max-width: 500px) {
+  .phoneIllustration {
+    left: 50px;
+    top: -120px;
+  }
+
   nav {
     padding: 32px 32px 0 32px;
   }
@@ -608,9 +705,20 @@ ALL MOBILE AND TABLET DEVICES
   }
 }
 
+@media (max-width: 453px) {
+  .phoneIllustration {
+    left: 30px;
+    max-width: 300px;
+  }
+}
+
 @media (max-width: 384px) {
   .header__container h1 {
     font-size: 34px;
+  }
+
+  .phoneIllustration {
+    left: 15px;
   }
 
   .header__container {
