@@ -211,6 +211,96 @@ header p {
 
 /*
 
+THIS IS THE MENU BACKDROP
+    ||||||
+    vvvvvv
+
+*/
+
+#menuBackdrop {
+  position: absolute;
+  top: 4rem;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+#menuBackdrop .container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: var(--white-color);
+  border-radius: 6px;
+}
+
+#menuBackdrop .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.topBox {
+  color: var(--dark-grey-blue);
+  font-size: var(--para-textFontSize);
+}
+
+.menuBackdrop__dropDownList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.listItemContainer {
+  display: flex;
+  align-items: center;
+}
+
+.listItemImage {
+  height: 8px;
+  margin-left: 0.4rem;
+}
+
+.menuBackDrop__listItem {
+  margin: 1rem 0;
+}
+
+hr {
+  width: 80%;
+}
+
+#connectDropDown {
+  background-color: var(--my-gray);
+  max-width: 250px;
+}
+
+.bottomBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottomBox a {
+  text-align: center;
+  color: var(--dark-grey-blue);
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.bottomBox button {
+  background-image: linear-gradient(to right, var(--other-red), var(--light-red));
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 99px;
+  transition: all 200ms;
+  margin-bottom: 1rem;
+}
+
+.bottomBox button a {
+  color: var(--white-color);
+}
+
+/*
+
 THIS IS THE LANDING PAGE 
     ||||||
     vvvvvv
@@ -524,6 +614,11 @@ ALL MOBILE AND TABLET DEVICES
 }
 
 @media (max-width: 839px) {
+
+  #welcomeBanner {
+    min-height: initial;
+  }
+
   .blogr-rightSide .text__container {
     padding: 8px 24px;
   }
