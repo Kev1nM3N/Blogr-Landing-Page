@@ -34,8 +34,8 @@ html {
   flex-direction: column;
   position: relative;
   z-index: 3;
-  overflow: hidden;
   border-bottom-left-radius: 15%;
+  overflow: hidden;
 }
 
 .background__img {
@@ -219,7 +219,8 @@ THIS IS THE MENU BACKDROP
 
 #menuBackdrop {
   position: absolute;
-  top: 4rem;
+  display: none;
+  top: 8rem;
   width: 100%;
   padding: 0 1rem;
 }
@@ -229,6 +230,7 @@ THIS IS THE MENU BACKDROP
   margin: 0 auto;
   background-color: var(--white-color);
   border-radius: 6px;
+  box-shadow: -6px 22px 30px 9px rgba(0,0,0,0.1);
 }
 
 #menuBackdrop .column {
@@ -241,6 +243,7 @@ THIS IS THE MENU BACKDROP
 .topBox {
   color: var(--dark-grey-blue);
   font-size: var(--para-textFontSize);
+  width: 60%;
 }
 
 .menuBackdrop__dropDownList {
@@ -267,11 +270,22 @@ THIS IS THE MENU BACKDROP
 
 hr {
   width: 80%;
+  margin-top: 1rem;
 }
 
 #connectDropDown {
   background-color: var(--my-gray);
   max-width: 250px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  border-radius: 6px;
+}
+
+.connectDropDownItem {
+  margin: 1rem 0;
 }
 
 .bottomBox {
@@ -551,6 +565,10 @@ ALL MOBILE AND TABLET DEVICES
 }
 
 @media (max-width: 990px) {
+
+  #menuBackdrop {
+    overflow: visible; /* Ensure it displays overflow content on mobile */
+  }
 
   #blogrBanner {
     margin-bottom: 0;
