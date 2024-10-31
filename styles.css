@@ -218,11 +218,15 @@ THIS IS THE MENU BACKDROP
 */
 
 #menuBackdrop {
-  position: absolute;
+  position: fixed;
   display: none;
   top: 8rem;
   width: 100%;
   padding: 0 1rem;
+}
+
+.openMenu {
+  display: block !important;
 }
 
 #menuBackdrop .container {
@@ -259,9 +263,22 @@ THIS IS THE MENU BACKDROP
   align-items: center;
 }
 
+#menuBackdrop .listItemContainer__last {
+  display: flex;
+  flex-direction: column;
+}
+
+#menuBackdrop .listItemContainer__last:hover #connectDropDown {
+  display: block;
+}
+
 .listItemImage {
   height: 8px;
   margin-left: 0.4rem;
+}
+
+#menuBackdrop .listItemContainer__last:hover .listItemImage {
+  transform: rotate(180deg);
 }
 
 .menuBackDrop__listItem {
@@ -275,17 +292,19 @@ hr {
 
 #connectDropDown {
   background-color: var(--my-gray);
-  max-width: 250px;
+  width: 250px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
   padding: 0.5rem 0;
   border-radius: 6px;
+  display: none;
 }
 
 .connectDropDownItem {
   margin: 1rem 0;
+  font-weight: 300;
 }
 
 .bottomBox {
@@ -566,10 +585,6 @@ ALL MOBILE AND TABLET DEVICES
 
 @media (max-width: 990px) {
 
-  #menuBackdrop {
-    overflow: visible; /* Ensure it displays overflow content on mobile */
-  }
-
   #blogrBanner {
     margin-bottom: 0;
   }
@@ -836,5 +851,9 @@ ALL MOBILE AND TABLET DEVICES
 
   .header__container {
     padding: 0 16px;
+  }
+
+  #connectDropDown {
+    width: 150px;
   }
 }
