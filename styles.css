@@ -43,7 +43,7 @@ html {
   left: 0;
   max-width: 1832px;
   z-index: -1;
-  transform: translateY(-620px) rotate(10deg) scale(1.8) translateX(200px);
+  transform: translateY(-620px) rotate(-1deg) scale(1.8) translateX(100px);
 }
 
 nav {
@@ -141,6 +141,7 @@ nav {
 
 .mobileButton {
   display: none;
+  transition: 300ms ease;
 }
 
 .right-nav a {
@@ -266,6 +267,7 @@ THIS IS THE MENU BACKDROP
 #menuBackdrop .listItemContainer__last {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 #menuBackdrop .listItemContainer__last:hover #connectDropDown {
@@ -682,6 +684,11 @@ ALL MOBILE AND TABLET DEVICES
 }
 
 @media (max-width: 700px) {
+  .background__img {
+    transform: translateY(-184px) rotate(5deg) scale(1.4) translateX(-46px);
+    max-width: 1000px;
+  }
+
   .header__container h1 {
     font-size: 40px;
   }
@@ -713,6 +720,7 @@ ALL MOBILE AND TABLET DEVICES
   }
 
   .illustration {
+    width: 100%;
     scale: 1;
     left: 0;
     bottom: 0;
@@ -762,6 +770,7 @@ ALL MOBILE AND TABLET DEVICES
   }
 
   .endPage__container {
+    justify-content: center;
     padding: 0;
   }
 
